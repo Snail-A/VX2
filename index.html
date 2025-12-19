@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>致未来的你</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-animation">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="music-control" id="musicControl">
+        <svg viewBox="0 0 24 24" class="music-icon">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+        </svg>
+    </div>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="renxing.mp3" type="audio/mpeg">
+    </audio>
+
+    <main class="container">
+        <div class="scene envelope-scene" id="envelopeScene">
+            <div class="envelope-wrapper">
+                <div class="envelope kraft-texture">
+                    <div class="rope horizontal"></div>
+                    <div class="rope vertical"></div>
+
+                    <div class="flower">
+                        <div class="petal p1"></div>
+                        <div class="petal p2"></div>
+                        <div class="petal p3"></div>
+                        <div class="petal p4"></div>
+                        <div class="center"></div>
+                    </div>
+
+                    <div class="flap-side-left flap"></div>
+                    <div class="flap-side-right flap"></div>
+                    <div class="pocket flap"></div>
+                    <div class="flap top kraft-texture"></div>
+
+                    <div class="wax-seal" id="openBtn">
+                        <span class="seal-text">啟</span>
+                    </div>
+                </div>
+                <p class="hint-text">点击火漆印开启</p>
+            </div>
+        </div>
+
+        <div class="scene letter-scene hidden" id="letterScene">
+            <div class="paper">
+                <div class="paper-texture"></div>
+                <div class="content">
+                    <div class="header">
+                        <p>王欣月女士：</p>
+                    </div>
+                    <div class="body-text">
+                        <p>恭喜你，笔锋回鞘，战役终章。</p>
+
+                        <p>回望过去，我知道这并非只是一段日子的流逝，而是一场漫长的、在暗夜中独自修行的苦旅。你见过更深露重时寥落的星辉，也忍受过图书馆闭馆时拥挤却沉默的人潮。那些无数次在崩溃边缘的自我重塑，那些将焦虑揉碎了又吞进肚子里的清晨黄昏，此刻都已化作你脚下坚实的来路。
+                        </p>
+
+                        <p>书山有路，你已踏平崎岖；学海无涯，你已摆渡至彼岸。</p>
+
+                        <p>愿这一年的韬光养晦，换来你来日的万丈光芒。愿你的名字，出现在心仪学府的录取通知书上，如愿以偿，大杀四方。去拥抱属于你的旷野吧，轻舟已过万重山。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
